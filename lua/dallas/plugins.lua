@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   -- put plugins here
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
+  use 'tpope/vim-fugitive'
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function()
