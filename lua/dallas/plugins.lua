@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
   use 'tpope/vim-fugitive'
+  use 'mbbill/undotree'
   use {
       'nvim-treesitter/nvim-treesitter',
       run = function()
