@@ -19,6 +19,12 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'mbbill/undotree'
   use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  } 
+  use {
       'nvim-treesitter/nvim-treesitter',
       run = function()
           local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
